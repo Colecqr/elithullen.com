@@ -1,0 +1,11 @@
+# Cloudflare Pages configuration.
+#
+# `name` MUST match the Pages project name in your Cloudflare dashboard,
+# otherwise the build will fail. Change it if yours differs.
+name = "elithullendotcom"
+
+# Where Eleventy writes the built site. This replaces the dashboard's
+# "Build output directory" field.
+pages_build_output_dir = "./_site"
+
+compatibility_date = "2026-07-19"
