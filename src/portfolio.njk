@@ -1,0 +1,33 @@
+---
+layout: layouts/base.njk
+title: Portfolio
+description: Selected work and projects by Eli Thullen.
+marginNote: portfolio
+permalink: /portfolio/
+---
+<section class="index">
+  <h1 class="index-title">Portfolio</h1>
+
+  {% if collections.portfolio | length %}
+    <ol class="entries">
+      {% for project in collections.portfolio %}
+        <li>
+          <a class="entry entry--project" href="{{ project.url }}">
+            <span class="entry-row">
+              <span class="entry-name">{{ project.data.title }}</span>
+              <span class="entry-leader" aria-hidden="true"></span>
+              <span class="entry-page">{{ project.data.year }}</span>
+            </span>
+            {% if project.data.description %}
+              <span class="entry-blurb">{{ project.data.description }}</span>
+            {% endif %}
+          </a>
+        </li>
+      {% endfor %}
+    </ol>
+  {% else %}
+    <p class="empty-note">Nothing here yet.</p>
+  {% endif %}
+</section>
+
+<a class="back" href="/">Back home</a>

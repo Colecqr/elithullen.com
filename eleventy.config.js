@@ -8,6 +8,11 @@ export default function (eleventyConfig) {
     api.getFilteredByGlob("src/writing/*.md").reverse()
   );
 
+  // Newest projects first
+  eleventyConfig.addCollection("portfolio", (api) =>
+    api.getFilteredByGlob("src/portfolio/*.md").reverse()
+  );
+
   // "March 4, 2026"
   eleventyConfig.addFilter("readableDate", (value) =>
     new Date(value).toLocaleDateString("en-US", {

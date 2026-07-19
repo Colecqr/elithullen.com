@@ -1,0 +1,29 @@
+---
+layout: layouts/base.njk
+---
+<article class="piece">
+  <h1 class="piece-title">{{ title }}</h1>
+
+  <p class="piece-meta">
+    {% if role %}<span>{{ role }}</span>{% endif %}
+    {% if role and year %}<span class="meta-sep" aria-hidden="true">/</span>{% endif %}
+    {% if year %}<span>{{ year }}</span>{% endif %}
+  </p>
+
+  {% if cover %}
+    <img class="project-cover" src="{{ cover }}" alt="{{ coverAlt or title }}">
+  {% endif %}
+
+  <div class="prose">
+    {{ content | safe }}
+  </div>
+
+  {% if link or source %}
+    <p class="project-links">
+      {% if link %}<a href="{{ link }}">View project</a>{% endif %}
+      {% if source %}<a href="{{ source }}">Source</a>{% endif %}
+    </p>
+  {% endif %}
+</article>
+
+<a class="back" href="/portfolio/">Back to Portfolio</a>
