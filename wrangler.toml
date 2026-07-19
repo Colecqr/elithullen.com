@@ -1,11 +1,14 @@
-# Cloudflare Pages configuration.
+# Cloudflare Workers configuration.
 #
-# `name` MUST match the Pages project name in your Cloudflare dashboard,
-# otherwise the build will fail. Change it if yours differs.
+# This project deploys with `npx wrangler deploy` (Workers Builds), so the
+# built site is uploaded as static assets. There is no Worker script — the
+# `[assets]` block alone is a valid assets-only Worker.
+#
+# `name` MUST match the project name in the Cloudflare dashboard.
 name = "elithullendotcom"
 
-# Where Eleventy writes the built site. This replaces the dashboard's
-# "Build output directory" field.
-pages_build_output_dir = "./_site"
-
 compatibility_date = "2026-07-19"
+
+[assets]
+# Where Eleventy writes the built site.
+directory = "./_site"
