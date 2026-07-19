@@ -1,3 +1,9 @@
+# Build output
+_site/
+
+# Dependencies
+node_modules/
+
 # Claude Code local machine settings
 .claude/settings.local.json
 

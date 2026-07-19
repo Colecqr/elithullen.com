@@ -1,0 +1,14 @@
+{
+  "name": "elithullen-com",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "elithullen.com — personal site",
+  "scripts": {
+    "start": "eleventy --serve --port=4173",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

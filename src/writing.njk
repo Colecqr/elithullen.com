@@ -1,0 +1,30 @@
+---
+layout: layouts/base.njk
+title: Writing
+description: Essays, notes, and pieces by Eli Thullen.
+marginNote: writing
+permalink: /writing/
+---
+<section class="index">
+  <h1 class="index-title">Writing</h1>
+
+  {% if collections.writing | length %}
+    <ol class="entries">
+      {% for piece in collections.writing %}
+        <li>
+          <a class="entry" href="{{ piece.url }}">
+            <span class="entry-name">{{ piece.data.title }}</span>
+            <span class="entry-leader" aria-hidden="true"></span>
+            <span class="entry-page">
+              <time datetime="{{ piece.date | isoDate }}">{{ piece.date | readableDate }}</time>
+            </span>
+          </a>
+        </li>
+      {% endfor %}
+    </ol>
+  {% else %}
+    <p class="empty-note">Nothing here yet.</p>
+  {% endif %}
+</section>
+
+<a class="back" href="/">Back home</a>

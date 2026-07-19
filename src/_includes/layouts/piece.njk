@@ -1,0 +1,15 @@
+---
+layout: layouts/base.njk
+---
+<article class="piece">
+  <h1 class="piece-title">{{ title }}</h1>
+  <p class="piece-meta">
+    <time datetime="{{ date | isoDate }}">{{ date | readableDate }}</time>
+  </p>
+
+  <div class="prose">
+    {{ content | safe }}
+  </div>
+</article>
+
+<a class="back" href="/writing/">Back to Writing</a>
