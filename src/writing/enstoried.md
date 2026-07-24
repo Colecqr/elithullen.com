@@ -1,6 +1,6 @@
 ---
 title: Enstoried | Why We Love Narrative
-date: 2025-9-28
+date: 2025-09-28
 description: The original speech that I presented at the Libertas Academy Annual Speech Meet in 2025.
 ---
 
