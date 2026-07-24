@@ -73,6 +73,52 @@ npm start
 
 Then open http://localhost:4173. It live-reloads as you edit.
 
+Note that `npm start` serves the static site only — the reactions API isn't
+running, so the buttons will show zeroes. To exercise the real thing locally,
+see below.
+
+## Reactions
+
+Each writing piece and work project has heart / sob / poop reaction buttons.
+Counts live in a Cloudflare D1 database and are served by the Worker in
+`worker/index.js`. Because pages are edge-cached, counts are fetched by
+`src/reactions.js` after the page renders rather than baked into the HTML.
+
+One reaction per emoji per browser, remembered in `localStorage`. That's a
+speed bump, not real security — someone determined could clear it and vote
+again. Fine for a personal site; revisit if it ever gets abused.
+
+### First-time setup (once per Cloudflare account)
+
+```powershell
+npx wrangler login
+npx wrangler d1 create elithullen-reactions
+```
+
+Copy the printed `database_id` into `wrangler.toml`, replacing
+`PLACEHOLDER_RUN_WRANGLER_D1_CREATE`. Then create the table remotely:
+
+```powershell
+npx wrangler d1 execute elithullen-reactions --remote --file=./schema.sql
+```
+
+### Running the full stack locally
+
+```powershell
+npx wrangler d1 execute elithullen-reactions --local --file=./schema.sql
+npm run build
+npx wrangler dev
+```
+
+Serves the site plus a working API at http://127.0.0.1:8788 against a local
+database. Nothing touches production.
+
+### Reading the counts
+
+```powershell
+npx wrangler d1 execute elithullen-reactions --remote --command "SELECT * FROM reactions ORDER BY count DESC"
+```
+
 ## Structure
 
 ```

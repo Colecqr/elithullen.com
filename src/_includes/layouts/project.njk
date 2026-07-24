@@ -27,6 +27,8 @@ layout: layouts/base.njk
       {% if source %}<a href="{{ source }}" target="_blank" rel="noopener noreferrer">Source</a>{% endif %}
     </p>
   {% endif %}
+
+  {% include "partials/reactions.njk" %}
 </article>
 
 <a class="back" href="/work/">Back to Work</a>

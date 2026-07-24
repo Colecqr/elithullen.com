@@ -1,14 +1,23 @@
 # Cloudflare Workers configuration.
 #
-# This project deploys with `npx wrangler deploy` (Workers Builds), so the
-# built site is uploaded as static assets. There is no Worker script — the
-# `[assets]` block alone is a valid assets-only Worker.
+# This project deploys with `npx wrangler deploy` (Workers Builds). The Worker
+# in worker/index.js serves the reactions API; everything else falls through
+# to the static site Eleventy builds into ./_site.
 #
 # `name` MUST match the project name in the Cloudflare dashboard.
 name = "elithullendotcom"
+main = "worker/index.js"
 
 compatibility_date = "2026-07-19"
 
 [assets]
 # Where Eleventy writes the built site.
 directory = "./_site"
+# Lets the Worker hand non-API requests back to the static assets.
+binding = "ASSETS"
+
+# Reaction counts. `database_id` comes from `wrangler d1 create` — see README.
+[[d1_databases]]
+binding = "DB"
+database_name = "elithullen-reactions"
+database_id = "PLACEHOLDER_RUN_WRANGLER_D1_CREATE"

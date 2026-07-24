@@ -1,6 +1,7 @@
 export default function (eleventyConfig) {
   // Copy these through untouched
   eleventyConfig.addPassthroughCopy("src/styles.css");
+  eleventyConfig.addPassthroughCopy("src/reactions.js");
   eleventyConfig.addPassthroughCopy("src/assets");
 
   // Newest writing first
