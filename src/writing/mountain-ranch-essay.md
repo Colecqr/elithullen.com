@@ -5,11 +5,7 @@ description: The scholarship essay that I submitted to the Mountain Ranch Commun
 form: prose
 ---
 
-
-
-My name is Eli Thullen, I was born in Oak Park, Illinois in 2008 to my parents Matthew and Lila Thullen. When I was about two years old I was blessed with a little sister as well as a change in scenery when we moved to Mountain Ranch to live on my grandparents property for less than a year before moving to Columbia, Missouri so that my father could accept a teaching position at the University of Missouri. After another six years and a new baby brother, my family moved back to Illinois where we stayed until 2021 when, prompted by the Pandemic, we moved back to Mountain Ranch to live on my grandparent’s spacious property away from the locked down city.
-
-
+*the first paragraph was redacted for privacy reasons, no content of substance was contained in it*
 
  It was when we moved to Calaveras County that I began attending Libertas Academy, a school to which I owe so much of academic, physical, and, most importantly, spiritual significance. Up to this point, I had attended a different school every year from Kindergarten to seventh grade, which had instilled in me an ability to adapt quickly and also a tendency to think of myself as the outsider. At Libertas Academy I was taught valuable lessons in Theology, Rhetoric, and Logic in addition to my Math, Science, and English classes. The physical education program at Libertas Academy ensured that I stayed in above average physical shape for the entirety of my career there, and the numerous public speaking assignments forced me to grow as a Rhetor. Needless to say, I attribute much of what I am today to the excellent education I received at Libertas Academy. 
 
