@@ -2,6 +2,9 @@ export default function (eleventyConfig) {
   // Copy these through untouched
   eleventyConfig.addPassthroughCopy("src/styles.css");
   eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy("src/robots.txt");
+  // Browsers and crawlers look for /favicon.ico at the site root.
+  eleventyConfig.addPassthroughCopy({ "src/assets/favicon.ico": "favicon.ico" });
 
   // Newest writing first
   eleventyConfig.addCollection("writing", (api) =>
