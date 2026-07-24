@@ -4,12 +4,6 @@ date: 2026-04-12
 description: The scholarship essay that I submitted to the Mountain Ranch Community Scholarship.
 ---
 
-**Mountain Ranch Scholarship | Personal Essay**
-
-Eli Thullen 
-
-4/12/2026
-
 
 
 My name is Eli Thullen, I was born in Oak Park, Illinois in 2008 to my parents Matthew and Lila Thullen. When I was about two years old I was blessed with a little sister as well as a change in scenery when we moved to Mountain Ranch to live on my grandparents property for less than a year before moving to Columbia, Missouri so that my father could accept a teaching position at the University of Missouri. After another six years and a new baby brother, my family moved back to Illinois where we stayed until 2021 when, prompted by the Pandemic, we moved back to Mountain Ranch to live on my grandparent’s spacious property away from the locked down city.
@@ -37,5 +31,3 @@ My time at the Calaveras County Water District was also an opportunity for me to
 
 
 Because of my passion for consumer electronics, my interest in psychology, and my aforementioned desire to pursue truth over corporate greed, I see myself entering the consumer electronics space and attempting to change it in the direction of healthy, consumer-oriented practices. Whether that be on the front of right-to-repair, data privacy, or less manipulative interfaces,  I want to help the consumer electronics industry stop blindly barreling forward towards profits and new technology and begin to ask whether a given technology or implementation is actually healthy and useful to the consumer. My ideal way of doing this is by means of some kind of entrepreneurial venture, which is exciting for me because I find business infrastructure fascinating. In order to pursue this goal, I will first need a deeper understanding of the actual technology involved in a consumer electronic device and the best way to do that is by getting a bachelor's degree in computer engineering. Computer Engineering is a combination of computer science and electric engineering and will allow me to develop a full picture understanding of the computer from both the software and hardware perspectives. Any help that I could receive in funding this first step would be greatly appreciated, thank you for your time.
-
-
