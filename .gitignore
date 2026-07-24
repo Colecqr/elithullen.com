@@ -4,6 +4,9 @@ _site/
 # Dependencies
 node_modules/
 
+# Wrangler local state (dev cache, build temp)
+.wrangler/
+
 # Claude Code local machine settings
 .claude/settings.local.json
 

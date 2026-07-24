@@ -1,16 +1,16 @@
 ---
 layout: layouts/base.njk
-title: Portfolio
+title: Work
 description: Selected work and projects by Eli Thullen.
-marginNote: portfolio
-permalink: /portfolio/
+marginNote: work
+permalink: /work/
 ---
 <section class="index">
-  <h1 class="index-title">Portfolio</h1>
+  <h1 class="index-title">Work</h1>
 
-  {% if collections.portfolio | length %}
+  {% if collections.work | length %}
     <ol class="entries">
-      {% for project in collections.portfolio %}
+      {% for project in collections.work %}
         <li>
           <a class="entry entry--project" href="{{ project.url }}">
             <span class="entry-row">

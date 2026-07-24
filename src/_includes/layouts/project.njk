@@ -10,7 +10,10 @@ layout: layouts/base.njk
     {% if year %}<span>{{ year }}</span>{% endif %}
   </p>
 
-  {% if cover %}
+  {# A video leads the page when present; otherwise fall back to a cover image. #}
+  {% if video %}
+    {% youtube video, title %}
+  {% elif cover %}
     <img class="project-cover" src="{{ cover }}" alt="{{ coverAlt or title }}">
   {% endif %}
 
@@ -20,10 +23,10 @@ layout: layouts/base.njk
 
   {% if link or source %}
     <p class="project-links">
-      {% if link %}<a href="{{ link }}">View project</a>{% endif %}
-      {% if source %}<a href="{{ source }}">Source</a>{% endif %}
+      {% if link %}<a href="{{ link }}" target="_blank" rel="noopener noreferrer">View project</a>{% endif %}
+      {% if source %}<a href="{{ source }}" target="_blank" rel="noopener noreferrer">Source</a>{% endif %}
     </p>
   {% endif %}
 </article>
 
-<a class="back" href="/portfolio/">Back to Portfolio</a>
+<a class="back" href="/work/">Back to Work</a>
