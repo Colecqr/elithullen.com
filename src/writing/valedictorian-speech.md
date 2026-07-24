@@ -2,6 +2,7 @@
 title: Libertas Academy Valedictorian Speech 2026
 date: 2026-05-30
 description: The speech that I presented at the 2026 Libertas Academy Graduation Ceremony as the class valedictorian.
+form: prose
 ---
 
 Good afternoon, students, staff, and guests. Thank you each for being here today and for all of the other ways you’ve supported my classmates and I over the past four years. We have all been blessed immensely by the faculty here, who have helped us grow as students, artists, athletes, and Christians, as well as our parents and the various sacrifices they’ve made to allow us to attend this school. The gift of this education is not one that will be soon forgotten. 

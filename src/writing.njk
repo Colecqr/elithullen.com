@@ -14,6 +14,7 @@ permalink: /writing/
         <li>
           <a class="entry" href="{{ piece.url }}">
             <span class="entry-name">{{ piece.data.title }}</span>
+            {% if piece.data.form %}<span class="entry-tag">{{ piece.data.form }}</span>{% endif %}
             <span class="entry-leader" aria-hidden="true"></span>
             <span class="entry-page">
               <time datetime="{{ piece.date | isoDate }}">{{ piece.date | readableDate }}</time>

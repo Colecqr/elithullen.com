@@ -176,6 +176,27 @@ body {
   font-weight: 500;
 }
 
+/* Small pill marking a piece's form (poetry / prose). */
+.entry-tag {
+  flex: 0 0 auto;
+  align-self: center;
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  border: 1px solid var(--grid-dot);
+  border-radius: 999px;
+  padding: 0.2rem 0.55rem;
+  line-height: 1;
+}
+
+a.entry:hover .entry-tag,
+a.entry:focus-visible .entry-tag {
+  color: var(--trackpoint);
+  border-color: var(--trackpoint);
+}
+
 .entry-leader {
   flex: 1;
   border-bottom: 1px dotted var(--grid-dot);

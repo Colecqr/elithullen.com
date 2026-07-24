@@ -5,6 +5,7 @@ layout: layouts/base.njk
   <h1 class="piece-title">{{ title }}</h1>
   <p class="piece-meta">
     <time datetime="{{ date | isoDate }}">{{ date | readableDate }}</time>
+    {% if form %}<span class="meta-sep" aria-hidden="true">/</span><span>{{ form }}</span>{% endif %}
   </p>
 
   <div class="prose">

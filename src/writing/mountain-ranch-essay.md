@@ -2,6 +2,7 @@
 title: Personal Scholarship Essay
 date: 2026-04-12
 description: The scholarship essay that I submitted to the Mountain Ranch Community Scholarship.
+form: prose
 ---
 
 
