@@ -434,6 +434,68 @@ a.entry--project:focus-visible .entry-blurb {
 /* Inline in prose, snap the spacing back to the dot grid. */
 .prose .video-embed { margin-top: var(--grid); }
 
+/* A PDF is usually the artifact itself, so it gets a full row rather than
+   sitting among the smaller pill links. */
+.pdf-link {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-top: calc(var(--grid) * 1.5);
+  padding: 0.95rem 1.15rem;
+  text-decoration: none;
+  color: var(--ink);
+  border: 1px solid var(--grid-dot);
+  border-radius: 4px;
+  transition: border-color 120ms ease, background-color 120ms ease;
+}
+
+.pdf-icon {
+  flex: 0 0 auto;
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: var(--trackpoint);
+}
+
+.pdf-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.pdf-label {
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.pdf-hint {
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
+  text-transform: lowercase;
+  color: var(--ink-faint);
+}
+
+.pdf-arrow {
+  margin-left: auto;
+  padding-left: 0.75rem;
+  color: var(--ink-faint);
+  transition: transform 120ms ease, color 120ms ease;
+}
+
+.pdf-link:hover,
+.pdf-link:focus-visible {
+  border-color: var(--trackpoint);
+  background-color: rgba(193, 18, 31, 0.05);
+  outline: none;
+}
+
+.pdf-link:hover .pdf-arrow,
+.pdf-link:focus-visible .pdf-arrow {
+  color: var(--trackpoint);
+  transform: translateX(3px);
+}
+
 .project-links {
   display: flex;
   flex-wrap: wrap;

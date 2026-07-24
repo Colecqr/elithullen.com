@@ -5,6 +5,7 @@ year: 2026
 role: Design & build
 description: A placeholder project, here to show the format. Delete me.
 video:
+pdf:
 link:
 source:
 ---
@@ -40,6 +41,22 @@ The second part is the title, used by screen readers. You can leave it off.
 Videos are 16:9, scale down to phone width, and only load when scrolled into
 view so they don't slow the page down.
 
+## Attaching a PDF
+
+Put the file in `src/assets/` and point at it:
+
+```yaml
+pdf: /assets/my-project.pdf
+pdfLabel: Read the full report   # optional, defaults to "View PDF"
+```
+
+That renders a link row near the bottom of the page. PDFs are linked rather
+than embedded on purpose — mobile browsers handle framed PDFs badly, often
+showing a blank box instead of the document.
+
+If you want a visual preview too, export the first page as an image and use
+it as `cover`.
+
 ## The fields you can use
 
 Everything above the `---` is front matter:
@@ -51,6 +68,8 @@ Everything above the `---` is front matter:
 - `video` — a YouTube link. Becomes the lead media.
 - `cover` — an image path like `/assets/projects/thing.png`. Used only when
   there's no `video`.
+- `pdf` — a path like `/assets/report.pdf`. Renders a link row.
+- `pdfLabel` — custom wording for that link. Defaults to "View PDF".
 - `link` — a URL to the live thing. Leave it blank and the button disappears.
 - `source` — a repo URL, same deal.
 - `date` — controls ordering on the index. Newest first.

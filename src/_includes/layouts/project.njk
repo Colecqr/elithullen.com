@@ -21,6 +21,21 @@ layout: layouts/base.njk
     {{ content | safe }}
   </div>
 
+  {# PDFs are linked, never embedded — mobile browsers render framed PDFs
+     badly or not at all. #}
+  {% if pdf %}
+    <a class="pdf-link" href="{{ pdf }}" target="_blank" rel="noopener noreferrer">
+      <svg class="pdf-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M6 2h8.2L20 7.8V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm8.6 2.3v3.9h3.9l-3.9-3.9z"/>
+      </svg>
+      <span class="pdf-text">
+        <span class="pdf-label">{{ pdfLabel or "View PDF" }}</span>
+        <span class="pdf-hint">opens in a new tab</span>
+      </span>
+      <span class="pdf-arrow" aria-hidden="true">&rarr;</span>
+    </a>
+  {% endif %}
+
   {% if link or source %}
     <p class="project-links">
       {% if link %}<a href="{{ link }}" target="_blank" rel="noopener noreferrer">View project</a>{% endif %}
