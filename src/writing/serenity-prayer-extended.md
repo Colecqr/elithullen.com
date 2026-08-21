@@ -1,6 +1,6 @@
 ---
 title: The Serenity Prayer | Extended
-date: 2025-18-9
+date: 2025-09-18
 description:
 form: poetry
 ---
